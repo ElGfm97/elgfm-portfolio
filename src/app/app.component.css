@@ -1,26 +1,64 @@
-#side-menu {
-  background: #D3CCE3;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #f4f6f8, #DBE1E9);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #f4f6f8, #DBE1E9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  float: left;
+html {
   height: 100%;
-  max-width: 350px;
-  padding: 50px;
-  overflow: auto;
+}
 
-}   /*TO DO: 1)change in collapsible for small devices (use media query) */
+body {
+  margin: 0;
+  height: 100%;
+  width: 100vh;
+  overflow-x: hidden;
+}
 
 
+@media (max-width: 780px) { /* small devices only */
+
+  #wrapper.toggled #sidebar {
+    margin-left: 0;
+    min-width: 13rem;
+    max-width: 90vw;
+
+  }
+
+  /* TO DO: fix margins in responsive */
+
+}
+
+#sidebar {
+  min-height: 100vh;
+  margin-left: -20rem;
+  width: 20rem;
+  background: #D3CCE3;
+  background: -webkit-linear-gradient(to bottom, #f4f6f8, #DBE1E9);
+  background: linear-gradient(to bottom, #f4f6f8, #DBE1E9);
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+  padding: 10px;
+}
+#sidebar .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+#sidebar .list-group {
+
+}
+#page-content-wrapper {
+  min-width: 100vw;
+}
 .section-link {
   display: block;
   color: black;
+  font-size: 10px;
+  margin: 0 auto;
+  margin-top: 15px;
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   margin: 0 auto;
   margin-top: 30px;
-  font-family: 'Montserrat', sans-serif;
-
 
 }
+
 
 #profile-img {
   width: 200px;
@@ -28,7 +66,6 @@
   display: block;
   margin: 0 auto;
   border: 2px solid white;
-
 
 }
 
@@ -86,7 +123,29 @@ a:hover:after {
   right: 0;
 }
 
+hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+@media (min-width: 780px) {  /*only for big devices*/
+
+  #sidebar {
+    margin-left: 0;
+    min-width: 20rem;
+    padding: 50px;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
 
 
 
+}
 
