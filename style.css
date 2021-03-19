@@ -1,0 +1,124 @@
+@media (max-width: 750px) {
+  #welcome-section {
+    background: #FEAC5E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+  #projects-container {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .project-img {
+  border-radius: 10px;
+  width: 250px;
+  height: 170px;
+
+  }
+}
+
+main {
+  text-align: center;
+  color: white;
+}
+
+@media (min-width: 750px) {
+  #welcome-section {
+      background: #FEAC5E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+.project-img {
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+
+}
+
+#projects-container {
+  padding-right: 60px;
+  padding-left: 60px;
+  margin-top: 80px;
+  padding-right: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+
+
+ }
+
+}
+
+@media (min-width: 1100px) {
+  #projects-container {
+    padding-right: 260px;
+    padding-left: 260px;
+    grid-gap: 20px;
+  }
+}
+
+#welcome-section {
+
+  padding-top: 250px;
+  height: 100vh;
+  width: 100%
+}
+
+#welcome-section h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#welcome-section h3 {
+  font-weight: lighter;
+}
+
+nav {
+    background-color: #34A4AC;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    height: 10vh;
+}
+
+.nav-link {
+  font-size: 20px;
+  color: white;
+}
+
+#projects {
+ background: #654ea3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  padding: 90px 20px;
+
+
+}
+
+
+.project-tile {
+  margin-bottom: 40px;
+  padding-right: 0;
+  padding-left: 0;
+
+}
+
+
+
+
+#contacts {
+    background-color: #4BC0C8;
+  padding: 50px 30px;
+
+
+}
+
+#profile-link {
+  color: white;
+}
